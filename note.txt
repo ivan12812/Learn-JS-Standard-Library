@@ -48,4 +48,22 @@ ARRAY
         - Sedangkan saat kita mengambil data, kita akan mengambil data dari palinig belakang (atau atas) terleih dahulu.
         - Stack ini sifatnya LIFO (Last in first out).
             Untuk menambah diurutan belakang, kita bisa menggunakan function push().
-            Dan untuk mengambil dan menghapus paling belakang, kita bisa menggunakan function pop()
+            Dan untuk mengambil dan menghapus paling belakang, kita bisa menggunakan function pop().
+
+    Array Search
+        - Array memiliki banyak function untuk melakukan pencarian.
+            find(value => boolean) : value       -----> Mencari data sesuai dengan kondisi.
+            findIndex(value => boolean) : number -----> Mencari  data index sesuai dengan kondisi.
+            includes(value) : boolean            -----> Mengecek apakah terdapat data.
+            indexOf(value) : number              -----> Mengecek posisi index data.
+            lastIndexOf(value) : number          -----> Mengecek posisi index data terakhir.
+
+    Array Filter
+        - Array memiliki function untuk melakukan filter data.
+            filter(value => boolean) : Array    -----> Melakukan filter data yang kondisinya bernilai true.
+
+    Array Transform
+        - Array juga memiliki function yang digunakan untuk melakukan trandformasi
+            map(value => result) : Array<result>            -----> Melakukan transform tiap value dan menghasilkan array result.
+            reduce(resultBefore, value => result) : result  -----> Melakukan transform dengan menggunakan value array dan value selanjutnya, lalu hasilnya dilajtkan ke iterasi selanjutnya.
+            reduceRight(resultBefore, value => result)      -----> Sama seperti reduce(), namun dilakukan dari belakang.
