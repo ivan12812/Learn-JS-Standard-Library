@@ -1,1 +1,51 @@
 JavaScript Standard Library
+
+NUMBER
+    - Number merupakan function yang digunakan untuk melakukan ke tipe data number.
+    - Jika data tidak bisa dikonversi ke number, secara otomatis hasilnya ada NaN.
+
+    Number Static Properties
+        - Nummber memiliki banyak setatic properties, seperti :
+            1. Number.MIN_VALUE untuk mendapatkan munber minimal.
+            2. Number.MAX_VALUE untuk mendapatkan number maksimal.
+
+    Number Static Method
+        - Number memiliki banyak setatic method, seperti :
+            1. Number.isNaN(value) untuk mengecek apakah NaN atau bukan.
+            2. Number.isInteger(value) untuk mengecek apakah value berupa integer atau bukan.
+
+    Number Instance Method
+        - Number memiliki banyak instance method, seperti :
+        - Number.toLocalString(local) untuk mengubah number menjadi string sesuai locale:
+        - Number.toString(radix) untuk mengubah number menjadi string sesuai radix.
+
+
+STRING 
+    - Tipe data sudah kita bahas pada materi JavaScript Dasar
+    - Namun kita belum membahas method atau juga instace properties yang terdapat di String.
+        String Instance Method dan properties
+            - String sendiri memiliki banyak instance dan propeties.
+            - Hal ini menjadikan untuk memanipulasi data string sangat mudah di JS. seperti mengubah menjadi lowercase(hurup kecil semua), UPPERCASE(Hurup besar semua), memotong string menjadi array dan lain-lain.
+
+
+ARRAY 
+    Array Loop
+        - Sebelumnya kita bisa menggunakan for in dan for of untuk melakukan iterasi array, namun Array juga memiliki method yang bernama forEach().
+        - Method forEach bisa digunakann juga untuk melakukan iterasi data array.
+
+    Array Queue
+        - Dalam struktur data, terdapat tipe struktur data bernama Queue (Antrian)
+        - Dimana data masuk akan diposisikan di urutkan paling belakang.
+        - Sedangkan data keluar akan diposisiakan dari urutan paling depan.
+        - Mirip sekali dengan antrian, atau istilahnya FIFO(first in firset out)
+        - Kita bisa menggunakan array dengan bantuan function 
+            push() untuk menambah data di belakang, dan 
+            shift() untuk mengambil dan menghapus data paling depan.
+
+    Array Stack
+        - Struktur data stack (Tumpukan) kebalikan dari Queue, dimana aturannya mirip dengan tumpukan kartu.
+        - Saat kita masukan data, kita akan mengambil data dari paling belakang (atau atas).
+        - Sedangkan saat kita mengambil data, kita akan mengambil data dari palinig belakang (atau atas) terleih dahulu.
+        - Stack ini sifatnya LIFO (Last in first out).
+            Untuk menambah diurutan belakang, kita bisa menggunakan function push().
+            Dan untuk mengambil dan menghapus paling belakang, kita bisa menggunakan function pop()
