@@ -67,3 +67,35 @@ ARRAY
             map(value => result) : Array<result>            -----> Melakukan transform tiap value dan menghasilkan array result.
             reduce(resultBefore, value => result) : result  -----> Melakukan transform dengan menggunakan value array dan value selanjutnya, lalu hasilnya dilajtkan ke iterasi selanjutnya.
             reduceRight(resultBefore, value => result)      -----> Sama seperti reduce(), namun dilakukan dari belakang.
+
+
+OBJECT
+    Object Freeze dan Seal.
+        - Secara default, object bisa diubah atau dihapus propertiesnya.
+        - Jika kita ingin mengubah suatu object menjadi object yang tidak bisa diubah atau dihapus, kita bisa menggunakan beberapa static method.
+            1. Object.freeze() digunakan untuk mengubah object menjadi object yang tidak bisa diubah atau dihapus attribute nya.
+            2. Object.seal() digunakan untuk mengubah object menjadi object yang tidak bisa dihapus attribute nya.
+
+    Object Assign
+        - Kadang kita ada kasus menggabungkan semua attribute dar sebuah object ke objec lain.
+        - Hal ini bisa kita lakukan dengan menggunakan Object.assign(target, source).
+
+    Object Property Name & value
+        - Object juga memiliki static method untuk digunakan mengambil semua properties names dan values.
+            1. Object.values() digunakan untuk mengambil semua property value.
+            2. Object.getPropertyNames() digunakan untuk mengambil semua property name.
+
+JSON
+    Pengenalan JSON
+        - JSON adalah JavaScript Object Notation.
+        - JSON merupakan data string yang berbentuk meirip dengan JavaScript Object.
+        - Saat ini JSON banyak sekali digunakan untuk komunikasi antar server dan client.
+        - JavaScript mendkung konversi data dari dtring json ke object ataupun sebaliknya.
+        - JSON.stringify() digunakan untuk melakukan konversi dari Object ke String.
+        - JSON.parse() digunakan untuk melakukan konversi dari string ke Object.
+
+
+BIGINT
+    - Big interjer merupakan tipe dat number yang bisa mencakup data angka lebih dari Number.MAX_SAFE_INTEGER.
+    - Untuk kasus number yang lebih dari itu, sangat disarankan menggunakan tipe data Bigint.
+    - Cara penggunaan BigInt sama saja dengan penggunaan Number dan juga operatornya.
